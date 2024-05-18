@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - master  # Change to your main branch if it's named differently
+      - gh-pages  # Change to your main branch if it's named differently
 
 permissions:
   contents: write  # Explicitly define permissions for contents
