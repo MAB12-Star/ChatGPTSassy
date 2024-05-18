@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - gh-pages  # Change to your main branch if it's named differently
+      - master  # Change to your main branch if it's named differently
 
 permissions:
   contents: write  # Explicitly define permissions for contents
@@ -28,6 +28,7 @@ jobs:
         run: |
           git config --list --show-origin
           git status
+          run: printenv | grep VITE_
 
       - name: Install dependencies
         run: npm install
