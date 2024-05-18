@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import OpenAI from "openai";
 
-console.log('VITE_OPENAI_ORGANIZATION:', import.meta.env.VITE_OPENAI_ORGANIZATION);
-console.log('VITE_OPENAI_API_KEY:', import.meta.env.VITE_OPENAI_API_KEY);
 
 const openai = new OpenAI({
   organization: import.meta.env.VITE_OPENAI_ORGANIZATION,
